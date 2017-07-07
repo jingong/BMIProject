@@ -1,0 +1,58 @@
+@charset "utf-8";
+.box{
+	/*取值为百分比的时候，其宽度会随着窗口的变化而变化*/
+	width: 80%;
+	/*参数一：上下 参数二：左右 当左右auto的时候，水平居中显示*/
+	margin: 50px auto;
+	/*内容居中显示，一般用来操作文本*/
+	text-align: center;
+}
+img{
+	width: 120px;
+	/*参数一：边框的宽度 参数二：边框的样式 参数三：边框的颜色*/
+	/*颜色取值 英文字母：green #+16进制 */
+	/*rgb(): 0~255    rgba(80,2,2,0.5) a:[0~1]*/
+	border: 8px solid #90996f;
+	/*border-radius取值为100%会变成正圆或者是椭圆*/
+	border-radius: 10px;
+	/*参数一：水平阴影的位置[必须]   参数二：垂直阴影的位置【必须】 
+	 参数三：高斯模糊的具体   参数四：阴影的宽度   
+	 参数无：阴影的颜色及透明度   参数六：阴影的样式insert：内阴影*/
+	box-shadow: 8px 8px 8px rgba(50,50,50,0.6);
+	/*过度动画 单位为s或ms*/
+	transition: all 0.3s; 
+	/*设置定位方式*/
+	position: relative;
+}
+/*子类选择器 选中第一个img标签*/
+img:nth-child(1){
+	/*transform动画：包含旋转、平移以及缩放*/
+	/*rotate:旋转 单位deg必须有 
+	 取值为证的时候顺时针旋转 取值为负的时候逆时针旋转*/
+	transform: rotate(13deg);
+}
+img:nth-child(2){
+	/*transform动画：包含旋转、平移以及缩放*/
+	/*rotate:旋转 单位deg必须有 
+	 取值为证的时候顺时针旋转 取值为负的时候逆时针旋转*/
+	transform: rotate(-13deg);
+}
+img:nth-child(3){
+	/*transform动画：包含旋转、平移以及缩放*/
+	/*rotate:旋转 单位deg必须有 
+	 取值为证的时候顺时针旋转 取值为负的时候逆时针旋转*/
+	transform: rotate(13deg);
+}
+img:nth-child(4){
+	/*transform动画：包含旋转、平移以及缩放*/
+	/*rotate:旋转 单位deg必须有 
+	 取值为证的时候顺时针旋转 取值为负的时候逆时针旋转*/
+	transform: rotate(-13deg);
+}
+
+img:hover{
+	/*scale:缩放动画 >1放大 <1缩小*/
+	transform: rotate(0deg) scale(1.2);
+	/*z-index:设置层叠方式*/
+	z-index: 9;
+}

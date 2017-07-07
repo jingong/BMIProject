@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+	作者：jiajingong@163.com
+	时间：2017-07-03
+	描述：第一天
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>BMI</title>
+		<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<h2>免费计算您的身体质量指数（BMI）</h2>
+			<hr />
+			<!--action表单提交地址    method提交方式post/get-->
+			<!--action="http://127.0.01:8080/BMI/bmi"-->
+			<form  method="post">
+				
+				<h4>我的身高：</h4>
+				<hr />
+				<!--number带有spanner的输入框-->
+				<input id="height_num" type="number" name="height_num"/><span>单位：厘米</span>
+				
+				<h4>我的体重：</h4>
+				<!--number带有spanner的输入框-->
+				<input id="weight_num" type="number" name="weight_num"/><span>单位：千克</span>
+				<hr />
+				
+				<!--submit:提交按钮-->
+				<input onclick="return commitData()" type="button" value="提交"/>
+			</form>
+			<table id="table1">
+				<tr><th>分类</th><th>BMI范围</th></tr>
+				<tr><td>偏瘦</td><td><=18.4</td></tr>
+				<tr><td>正常</td><td>18.5~23.9</td></tr>
+				<tr><td>过重</td><td>24.0~27.9</td></tr>
+				<tr><td>肥胖</td><td>>=28</td></tr>
+			</table>
+			<div class="result">
+				<p id="bmi">您的BMI值:</p>
+				<p id="wei">您的理想体重:</p>
+			</div>
+			
+			<table id="table2">
+				<tr id="tr1">
+					<th>ID</th>
+					<th>日期</th>
+					<th>身高</th>
+					<th>体重</th>
+					<th>BMI</th>
+					<th>删除</th>					
+				</tr>
+			</table>
+		</div>
+		
+		
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
