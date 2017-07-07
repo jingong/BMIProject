@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="bmi">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../jar/lib" />
+      <root url="jar://$PROJECT_DIR$/../apache-tomcat-8.5.13/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../jar/lib" recursive="false" />
+  </library>
+</component>
